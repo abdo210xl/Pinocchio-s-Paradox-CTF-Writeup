@@ -65,8 +65,9 @@ create_vault.py generates .vault.dat with:
 
 - **Encrypted secret**: Wooden_Noze_4eva
 
-### 4. Compile the Binary
+### 4. Run the Script and Compile the Binary
 ```bash
+python3 create_vault.py
 gcc -o pinocchio_vault pinocchio_vault.c -lcrypto -no-pie
 ```
 
