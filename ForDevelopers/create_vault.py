@@ -28,7 +28,7 @@ encrypted_decoy = encrypt_text(decoy_msg)
 encrypted_secret = encrypt_text(real_secret)
 
 # Write to .vault.dat
-with open('.vault.dat', 'wb') as f:
+with open('vault.dat', 'wb') as f:
     # Write hash
     f.write(password_hash)
     
@@ -48,4 +48,4 @@ with open('.vault.dat', 'wb') as f:
     f.write(len(encrypted_secret).to_bytes(8, 'little'))
     f.write(encrypted_secret)
 
-print("Vault file '.vault.dat' created successfully!")
+print("Vault file 'vault.dat' created successfully!")
