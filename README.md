@@ -11,7 +11,7 @@ A deceptive binary that lies about its output, leading to a hidden flag embedded
 **Challenge Files:**
 - `pinocchio_vault` - The main challenge binary
 - `pinocchio.jpg` - Image containing hidden flag  
-- `.vault.dat` - Encrypted data file
+- `vault.dat` - Encrypted data file
 
 ## 🎯 Challenge Overview
 
@@ -39,7 +39,7 @@ I will provide initial files for both phases in separate folders in this repo
 
 ├── pinocchio_vault # Compiled binary
 
-└── .vault.dat # Generated data file
+└── vault.dat # Generated data file
 
 
 ### 1. Develop the Binary
@@ -57,7 +57,7 @@ steghide embed -cf pinocchio.jpg -ef flag.txt -p "Wooden_Noze_4eva"
 ```
 
 ### 3. Create Vault System
-create_vault.py generates .vault.dat with:
+create_vault.py generates vault.dat with:
 
 - **Hash of password**: G3pp3tt0s_W0rkshop
 
